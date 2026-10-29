@@ -142,9 +142,9 @@
       overflow: hidden;
       text-overflow: ellipsis;
     }
-    .mosaico-tag .material-symbols-outlined { font-size: 15px; flex: none; }
+    .mosaico-cam { width: 17px; height: 15px; flex: none; color: #00b7fd; }
     .mosaico-item.grande .mosaico-tag { font-size: 0.9rem; padding: 7px 12px; left: 12px; bottom: 12px; }
-    .mosaico-item.grande .mosaico-tag .material-symbols-outlined { font-size: 18px; }
+    .mosaico-item.grande .mosaico-cam { width: 21px; height: 18px; }
 
     @media (min-width: 768px) {
       .head-panel { gap: 24px; padding: 20px 28px; }
@@ -498,6 +498,8 @@
   </style>
 </head>
 <body>
+<!-- ÍCONO DE CÁMARA (azul) USADO EN LAS ETIQUETAS DEL MOSAICO -->
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg"><symbol id="ico-camara" viewBox="150 120 1020 910"><g fill="none" stroke="currentColor" stroke-width="72" stroke-linejoin="round" stroke-linecap="round"><path d="M262 277H440L510 200Q530 181 560 181H760Q790 181 810 200L880 277H1058Q1120 277 1120 340V890Q1120 950 1058 950H262Q200 950 200 890V340Q200 277 262 277Z"/><circle cx="659" cy="608" r="195"/></g></symbol></svg>
 <!-- VISTA 1: MENÚ PRINCIPAL -->
 <div id="vista-menu">
 <header>
@@ -515,27 +517,27 @@
 <div class="mosaico">
 <a aria-label="Ver Retratos" class="mosaico-item grande" href="sesiones.html">
 <img alt="Retrato de una joven sonriendo con luces violetas de fondo" decoding="async" fetchpriority="high" src="https://lh3.googleusercontent.com/d/1fg5_yqe6WED5gnXU5WUuke4F4i0x8SuK=w1000" style="object-position: 50% 40%;"/>
-<span class="mosaico-tag"><span class="material-symbols-outlined">folder_open</span>Retratos</span>
+<span class="mosaico-tag"><svg aria-hidden="true" class="mosaico-cam"><use href="#ico-camara"/></svg>Retratos</span>
 </a>
 <a aria-label="Ver Blanco y Negro" class="mosaico-item" href="ensayos.html">
 <img alt="Dos hombres conversando en un café, en blanco y negro" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/d/1f9TvQxESMWMOQOCfxV_1FPLjaPfW4tyd=w600" style="object-position: 50% 32%;"/>
-<span class="mosaico-tag"><span class="material-symbols-outlined">folder_open</span>B &amp; N</span>
+<span class="mosaico-tag"><svg aria-hidden="true" class="mosaico-cam"><use href="#ico-camara"/></svg>B &amp; N</span>
 </a>
 <a aria-label="Ver Postales" class="mosaico-item" href="postales.html">
 <img alt="Edificio de techos rojos entre árboles en la montaña" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/d/1nEXD5se9dcrOZhGNR2gBdkg7ILNCoJJE=w600"/>
-<span class="mosaico-tag"><span class="material-symbols-outlined">folder_open</span>Postales</span>
+<span class="mosaico-tag"><svg aria-hidden="true" class="mosaico-cam"><use href="#ico-camara"/></svg>Postales</span>
 </a>
 <a aria-label="Ver Producto" class="mosaico-item" href="miscelaneas.html">
 <img alt="Llama de cerámica con gorro tejido y luces desenfocadas" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/d/1m-gkRBCNjsG4ZWhQg7eso-gpLb3Un3if=w600" style="object-position: 50% 28%;"/>
-<span class="mosaico-tag"><span class="material-symbols-outlined">folder_open</span>Producto</span>
+<span class="mosaico-tag"><svg aria-hidden="true" class="mosaico-cam"><use href="#ico-camara"/></svg>Producto</span>
 </a>
 <a aria-label="Ver Sesiones" class="mosaico-item" href="sesiones.html">
 <img alt="Dos músicos con violonchelo y guitarra frente a un mural" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/d/1dWFAoIQajXcd2pX9gzfxb3_0SM-FGecM=w600" style="object-position: 50% 22%;"/>
-<span class="mosaico-tag"><span class="material-symbols-outlined">folder_open</span>Sesiones</span>
+<span class="mosaico-tag"><svg aria-hidden="true" class="mosaico-cam"><use href="#ico-camara"/></svg>Sesiones</span>
 </a>
 <a aria-label="Ver 35 mm análogo" class="mosaico-item ancho" href="ensayos.html">
 <img alt="Bailarines de folklore en una plaza, fotografía en película 35 mm" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/d/1b2Z5OpW90mc3Tv2Z3C7-LQ_x8NPC-6J9=w700" style="object-position: 50% 55%;"/>
-<span class="mosaico-tag"><span class="material-symbols-outlined">folder_open</span>35 mm</span>
+<span class="mosaico-tag"><svg aria-hidden="true" class="mosaico-cam"><use href="#ico-camara"/></svg>35 mm</span>
 </a>
 </div>
 </div>
